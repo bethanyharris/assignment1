@@ -19,7 +19,7 @@ html {
 	text-size-adjust: 100%;
     
     font-size: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Palatino, times, serif;
     
     background-image: url(../images/nordic.jpg);
     background-size: 10rem;
@@ -57,10 +57,8 @@ body {
     background-repeat: no-repeat;
     background-size: 20rem;
     background-position: center center;
-    
     box-shadow: .2rem .4rem .4rem .2rem rgba(0,0,0, .4);
-    
-    border: solid .25rem rgba(0, 110, 186, 0.3);
+    border: solid .25rem rgba(75, 176, 255, .5);
     border-radius: 15rem;
 }
 
@@ -70,12 +68,20 @@ h1 {
     font-weight: normal;
     font-size: 1.5rem;
     text-align: center;
-    background-color: rgba(0, 110, 186, 0.3);
+    background-color: rgba(75, 176, 255, .5);
     color: white
 }
 
+.dropcap:first-letter {
+    font-size: 4rem;
+    font-weight: bold;
+    float: left;
+    margin: .5rem 0 .5rem 0;
+    color: rgba(0, 110, 186, 0.3);
+}
+
 h2 {
-    
+    line-height: 1.5rem;
     margin: 1rem 5%;
     padding: .5rem 5%;
     background-color: rgba(0, 110, 186, 0.7);
@@ -85,6 +91,7 @@ h2 {
 p {
     margin: 1rem 5%;
     padding: 1rem 1rem 5%;
+    line-height: 1.5rem;
     background-color: white;
 }
 
@@ -94,9 +101,43 @@ figure {
 }
 
 figcaption {
-    font-size: .75rem;
+    font-size: .8rem;
     padding: .5rem 10%;
-    background-color: rgba(0, 110, 186, 0.9);
+    background-color: rgba(75, 176, 255, .9);
+}
+
+blockquote {
+    margin: 1rem 5%;
+    overflow: hidden;
+    color: rgba(75, 176, 255, .9);
+}
+
+blockquote p {
+    font-size: 1rem;
+    padding: 3rem
+}
+
+blockquote span {
+    font-weight: normal;
+    float: right;
+    margin: 1.5rem 0;
+    color: black;
+}
+
+blockquote p:before {
+    content: "“";
+    font-size: 4rem;
+    color: black;
+    float left;
+    margin: 1rem 0 0 -2rem;
+}
+
+blockquote p:after {
+    content: "”";
+    font-size: 2.5rem;
+    position: absolute;
+    color: black;
+    margin: .3rem .5rem -2rem;
 }
 
 footer {
@@ -106,10 +147,10 @@ footer {
 
 footer p {
     margin: .25rem 5% 3rem;
-    color: rgba(0, 110, 186, 0.3);
+    color: black;
     font-size: 1rem;
 }
 
 footer a {
-    color: rgba(0, 110, 186, 1);
+    color: rgba(75, 176, 255, .9);
 }
